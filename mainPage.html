@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- connaitre utilisateur qui entre -->
+    <h1 style="text-align: center; width: 100%" id="title-text">
+      Welcome Enter Your Name
+    </h1>
+    <div
+      style="
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+      "
+    >
+      <div
+        style="display: flex; justify-content: center; gap: 8px"
+        id="get-user-name"
+      >
+        <input type="text" style="border: 2px solid black" id="username" />
+        <button style="padding: 4px; border: 1px solid" onclick="checkUser()">
+          GO
+        </button>
+      </div>
+      <p id="error-message-user" style="color: red"></p>
+    </div>
+
+    <!-- create item -->
+    <div
+      style="display: flex; justify-content: center; gap: 8px; display: none"
+      id="create-element"
+    >
+      <input
+        id="create-input"
+        type="text"
+        placeholder="Enter element name"
+        style="height: 50px; width: 200px; border: 1px solid black"
+      />
+      <button id="create-button" onclick="actionFunction()">Create</button>
+    </div>
+
+    <!-- afficher les element -->
+    <div
+      style="display: flex; justify-content: center; display: none"
+      id="read-element"
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          gap: 15px;
+          border: 2px solid purple;
+          width: 50%;
+          align-items: center;
+          padding-left: 10px;
+          padding-right: 10px;
+        "
+      >
+        <p>Affiche element</p>
+        <div style="display: flex">
+          <button id="update-element">Update</button>
+          <button id="delete-element">Delete</button>
+        </div>
+      </div>
+    </div>
+    <script src="mainPage.js"></script>
+  </body>
+</html>

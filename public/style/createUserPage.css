@@ -1,0 +1,31 @@
+.main-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#menu-container {
+    padding: 8px;
+    display: flex;
+    gap: 16px;
+}
+
+.menu-button {
+    background-color: none;
+    padding: 32px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#role-container{
+    display: none;
+    padding: 8px;
+    justify-content: center;
+}
+
+#role-name, #create-role-button{
+    padding: 8px;
+}
+

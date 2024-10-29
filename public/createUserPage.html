@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style/createUserPage.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Welcome Admin</h1>
+        <div id="menu-container">
+            <button class="menu-button">Create User</button>
+            <button class="menu-button" onclick="showRoleSection()">Create Role</button>
+        </div>
+
+        <div id="role-container">
+            <div class="create-role">
+                <input type="text" placeholder="Enter the role name" id="role-name" />
+                <button id="create-role-button" onclick="createRole()">Create</button>
+            </div>
+            <div class="role-list"></div>
+        </div>
+    </div>
+    <script src="./js/adminData.js" ></script>
+</body>
+</html>
