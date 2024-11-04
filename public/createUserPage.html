@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="./style/createUserPage.css">
-</head>
-<body>
-    <div id="loader" style="display: none; justify-content: center; width: 100%;">
-        <h4 style="font-weight: bold;">charging ...</h4>
+    <link rel="stylesheet" href="./style/createUserPage.css" />
+  </head>
+  <body>
+    <div
+      id="loader"
+      style="display: none; justify-content: center; width: 100%"
+    >
+      <h4 style="font-weight: bold">charging ...</h4>
     </div>
     <div class="main-container">
-        <h1>Welcome Admin</h1>
-        <div id="menu-container">
-            <button class="menu-button">Create User</button>
-            <button class="menu-button" onclick="showRoleSection()">Create Role</button>
-        </div>
+      <div style="display: flex; align-items: center; gap: 16px">
+        <h1 style="cursor: pointer; display: none" id="back-button"><</h1>
+        <h1 id="title">Welcome Admin</h1>
+      </div>
 
-        <div id="role-container">
-            <div class="create-role">
-                <input type="text" placeholder="Enter the role name" id="role-name" />
-                <button id="create-role-button" onclick="createRole()">Create</button>
-            </div>
-            <div class="role-list"></div>
+      <!-- role section -->
+
+      <div id="menu-container">
+        <button class="menu-button" onclick="showUserSection()">
+          Create User
+        </button>
+        <button class="menu-button" onclick="showRoleSection()">
+          Create Role
+        </button>
+      </div>
+
+      <div id="role-container">
+        <div class="create-role">
+          <input type="text" placeholder="Enter the role name" id="role-name" />
+          <button id="create-role-button" onclick="createRole()">Create</button>
         </div>
+        <div class="role-list" id="role-list"></div>
+      </div>
+
+      <!-- end of role section -->
+
+      <!-- start of user section -->
+
+      <div id="user-form">
+        <input
+          type="text"
+          name=""
+          id="user-name"
+          placeholder="Enter user name"
+        />
+        <select name="roles" id="select-roles">
+          <option value="">Choose role</option>
+        </select>
+        <button onclick="addUser()">create</button>
+      </div>
+
+      <div id="user-list">user list</div>
+      <!-- end of user section  -->
     </div>
-    <script src="./js/adminData.js" ></script>
-</body>
+    <script src="./js/adminData.js"></script>
+  </body>
 </html>

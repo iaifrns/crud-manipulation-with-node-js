@@ -1,0 +1,22 @@
+{
+  "0": {
+    "name": "user 1",
+    "role": "read"
+  },
+  "1": {
+    "name": "user 2",
+    "role": "create"
+  },
+  "2": {
+    "name": "user 3",
+    "role": "update"
+  },
+  "3": {
+    "name": "user 4",
+    "role": "delete"
+  },
+  "4": {
+    "name": "user 5",
+    "role": "admin"
+  }
+}

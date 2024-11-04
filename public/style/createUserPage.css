@@ -1,4 +1,4 @@
-.main-container{
+.main-container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -19,13 +19,17 @@
     font-weight: bold;
 }
 
-#role-container{
+#role-container {
     display: none;
     padding: 8px;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
 }
 
-#role-name, #create-role-button{
+#role-name,
+#create-role-button {
     padding: 8px;
 }
 
@@ -33,3 +37,60 @@
     display: none;
 }
 
+.role-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.role-item {
+    display: flex;
+    width: 300px;
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 4px;
+    align-items: center;
+}
+
+/* css of user */
+
+#user-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#user-name,
+#select-roles {
+    padding: 8px;
+    width: 200px
+}
+
+#user-form button {
+    padding: 8px;
+    font-weight: bold;
+}
+
+#user-list{
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    width: 300px;
+    border: 1px solid;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
