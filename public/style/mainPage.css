@@ -6,16 +6,16 @@
     align-items: center;
 }
 
-#item-input{
+#item-input {
     padding: 8px;
     width: 250px;
 }
 
-#item-button{
+#item-button {
     padding: 8px;
 }
 
-#item-list{
+#item-list {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -30,7 +30,52 @@
     align-items: center;
 }
 
-.data-item .item-info{
+.data-item .item-info {
     display: flex;
     flex-direction: column;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+.hide-update #update{
+    display: none;
+}
+
+.hide-update #delete{
+    display: block;
+}
+
+.hide-delete #update{
+    display: block;
+}
+
+.hide-delete #delete{
+    display: none;
+}
+
+#input-container{
+    display: flex;
+}
+
+#login-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#login-section input{
+    width: 350px;
+}
+
+#login-section button{
+    width: 200px;
+}
+
+.hide-div .action-button {
+    display: none;
 }

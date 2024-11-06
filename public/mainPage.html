@@ -8,12 +8,15 @@
   </head>
   <body>
     <div class="main-container">
-      <h1>Create Item</h1>
+      <h1 id="title">Create Item</h1>
+      <div id="login-section">
+        <input type="text" style="padding: 8px;" placeholder="Enter user name" id="user-input"/>
+        <button style="padding: 8px;" onclick="login()">login</button>
+      </div>
       <div id="input-container">
         <input type="text" placeholder="Enter the item" id="item-input" />
-        <button id="item-button" onclick="addItem()">create</button>
+        <button id="item-button" onclick="clickButon()">create</button>
       </div>
-
       <div id="item-list"></div>
     </div>
     <script src="./js/mainPage.js"></script>
